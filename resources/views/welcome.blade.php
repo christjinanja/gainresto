@@ -4,7 +4,7 @@
         style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/14/39/beans-1834984_960_720.jpg')">
         <h1
             class="font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-5xl">
-            <span class="inline md:block">Bienvenue au restaurant du Groupe Gain</span>
+            <span class="inline md:block">Bienvenue au GAIN RESTO</span>
         </h1>
         <div class="mx-auto mt-2 text-black-50 md:text-center lg:text-xl">
             Bien manger c'est bien se porter !
@@ -18,7 +18,7 @@
         </div>
     </div>
     <!-- End Main Hero Content -->
-     {{-- <section class="px-2 py-32 bg-white md:px-0">
+      <section class="px-2 py-32 bg-white md:px-0">
         <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
             <div class="flex flex-wrap items-center sm:-mx-3">
                 <div class="w-full md:w-1/2 md:px-3">
@@ -28,7 +28,7 @@
             > -->
                         <h3 class="text-xl">NOTRE HISTOIRE
                         </h3>
-                        <h2 class="text-4xl text-green-600">Soyez le bienvenu!</h2>
+                        <h2 class="text-4xl text-green-600">Coucou!</h2>
                         <!-- </h1> -->
                         <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo incidunt
@@ -38,7 +38,7 @@
                             Repellendus mollitia quaerat est voluptas!
                         </p>
                         <div class="relative flex">
-                            <a href="#_"
+                            {{-- <a href="#_"
                                 class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-green-600 rounded-md sm:mb-0 hover:bg-green-700 sm:w-auto">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24"
@@ -47,7 +47,7 @@
                                     <line x1="5" y1="12" x2="19" y2="12"></line>
                                     <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="py-20 bg-gray-50">
+    {{-- <section class="py-20 bg-gray-50">
         <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
             <div class="flex flex-wrap items-center -mx-3">
                 <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">

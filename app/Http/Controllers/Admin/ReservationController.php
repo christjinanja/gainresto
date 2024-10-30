@@ -20,6 +20,7 @@ class ReservationController extends Controller
     public function index()
     {
         $reservations = Reservation::all();
+        $reservations = Reservation::paginate(4);
         return view('admin.reservations.index', compact('reservations'));
     }
 
@@ -44,17 +45,17 @@ class ReservationController extends Controller
     {
         $table = Table::findOrFail($request->table_id);
         if ($request->guest_number > $table->guest_number) {
-            return back()->with('warning', 'Please choose the table base on guests.');
+            return back()->with('warning', 'Veuillez choisir la table selon les invités.');
         }
         $request_date = Carbon::parse($request->res_date);
         foreach ($table->reservations as $res) {
             if ($res->res_date->format('Y-m-d') == $request_date->format('Y-m-d')) {
-                return back()->with('warning', 'This table is reserved for this date.');
+                return back()->with('warning', 'Cette table est réservée pour cette date.');
             }
         }
         Reservation::create($request->validated());
 
-        return to_route('admin.reservations.index')->with('success', 'Reservation created successfully.');
+        return to_route('admin.reservations.index')->with('success', 'Réservation créée avec succès.');
     }
 
     /**
